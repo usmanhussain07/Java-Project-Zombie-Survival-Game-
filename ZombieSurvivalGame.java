@@ -772,7 +772,6 @@ class GamePanel extends JPanel implements ActionListener, KeyListener, MouseMoti
         } 
     } 
     
-    // Explicit targeting vector spawn routine
     private void spawnSpecificZombie(int choice) {
         int side = rng.nextInt(4); 
         int sx, sy; 
@@ -803,7 +802,7 @@ class GamePanel extends JPanel implements ActionListener, KeyListener, MouseMoti
         spawned++; 
     }
     
-    private void spawnZombie() {} // Safe internal bypass structure
+    private void spawnZombie() {} 
     
     private void addParticles(int x, int y, Color c, int n) { 
         for (int i = 0; i < n; i++) { 
